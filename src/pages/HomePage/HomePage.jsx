@@ -14,7 +14,7 @@ export const HomePage = () => {
 				<>
 					<ul className={styles.country_list}>
 						{data.map((country) => (
-							<li>
+							<li key={country.name.common}>
 								<CountryLink countryName={country.name.common} />
 							</li>
 						))}
