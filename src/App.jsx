@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import { HomePage } from "./pages/HomePage/HomePage";
 import { CountryPage } from "./pages/CounrtyPage/CountryPage";
@@ -6,7 +6,7 @@ import { CountryPage } from "./pages/CounrtyPage/CountryPage";
 export const App = () => {
 	return (
 		<>
-			<BrowserRouter>
+			<HashRouter>
 				<Routes>
 					<Route
 						index
@@ -17,7 +17,7 @@ export const App = () => {
 						element={<CountryPage />}
 					/>
 				</Routes>
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	);
 };
