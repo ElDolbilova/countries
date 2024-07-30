@@ -1,0 +1,24 @@
+.root {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+@media (max-width: 600px) {
+	.root {
+		flex-direction: column;
+	}
+	.info {
+        margin: 1em 3em;
+		gap: 1em;
+	}
+	.info > span {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
